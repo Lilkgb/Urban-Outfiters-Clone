@@ -1,0 +1,381 @@
+@mixin hover {
+  cursor: pointer;
+  color: lighten(black, 60%);
+  text-decoration: underline;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin background {
+  background-color: #f3f2f2;
+}
+$gray: #f3f2f2;
+$pink: #ff006e;
+
+
+.banner {
+  display: flex;
+  .interest {
+    background-color: $pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    span {
+      margin-left: 50px;
+      text-decoration: underline;
+    }
+    span:hover {
+      text-decoration: none;
+      cursor: pointer;
+      color: darken(white, 30%);
+    }
+  }
+  .header {
+    height: 50px;
+    border: 0.5px solid lightgray;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    .leftHeader{
+      img {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+      }
+    }
+    .middleHeader{
+      display: flex;
+      p {
+        color: hotpink;
+        padding-right: 10px;
+      }
+
+      p:hover {
+        @include hover;
+        .dropDown {
+          color: green;
+        }
+      }
+
+      .sale {
+        color: red;
+      }
+    }
+    .rightHeader {
+      display: flex;
+      height: 45px;
+      img {
+        height: 45px;
+      }
+      img:hover {
+        @include hover;
+        text-decoration: underline;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+      p:hover {
+        @include hover;
+        .dropDown:show;
+      }
+      input {
+        height: 30px;
+        width: 125px;
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+.main {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+  }
+  .information {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    p {
+      display: flex;
+      font-size: 10px;
+      padding-left: 10px;
+    }
+    .shipping {
+      width: 32%;
+      @include center;
+      @include background;
+      img {
+        height: 40px;
+      }
+      .gray {
+        color: gray;
+        text-decoration: underline;
+      }
+    }
+    .shipping:hover {
+      @include hover;
+    }
+    .giftCards {
+      width: 32%;
+      @include center;
+      @include background;
+      img {
+        height: 60px;
+      }
+      .gray {
+        color: gray;
+        text-decoration: underline;
+      }
+    }
+    .giftCards:hover {
+      @include hover;
+    }
+    .rewards {
+      width: 32%;
+      @include center;
+      @include background;
+      img {
+        height: 40px;
+      }
+      .gray {
+        color: gray;
+        text-decoration: underline;
+      }
+    }
+    .rewards:hover {
+      @include hover;
+    }
+  }
+  .limited {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    .discount {
+      h1 {
+        font-size: 80px;
+        padding-top: 5px;
+      }
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      button {
+        background-color: $gray;
+        border: none;
+      }
+      .womensButton {
+        margin-right: 10px;
+      }
+    }
+    .checkout {
+      display: flex;
+      font-size: 10px;
+      justify-content: flex-end;
+      margin-right: 10px;
+    }
+  }
+  .mainBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .filler {
+      width: 48%;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+      }
+      img:hover {
+        cursor: pointer;
+        border: 10px solid hotpink;
+      }
+      button {
+        position: absolute;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin-top: -40px;
+        margin-left: 15%;
+      }
+    }
+  }
+  .threeBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .boxer {
+      width: 32%;
+      img {
+        width: 100%;
+      }
+      img:hover {
+        cursor: pointer;
+        border: 10px solid black;
+      }
+      button {
+        position: absolute;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.6);
+        margin-top: -40px;
+        margin-left: 10%;
+      }
+    }
+  }
+  .deals {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 100px;
+    border-bottom: 2px solid lightgray;
+    .dealBox {
+      width: 15%;
+      p {
+        font-size: 12px;
+      }
+      img {
+        width: 100%;
+      }
+      .hide {
+        display: none;
+      }
+    }
+    .dealBox:hover {
+      .item {
+        display:none;
+      }
+      .hide {
+        display: table;
+        border: 5px solid pink;
+      }
+    }
+  }
+  .aboutUO {
+    text-align: center;
+    margin-top: 50px;
+    p {
+      margin-bottom: 10px;
+      font-size: 10px;
+    }
+  }
+}
+
+.bottom {
+  width: 100%;
+  background-color: $gray;
+  border-top: 1px solid lightgray;
+  margin-top: 50px;
+  .email {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    padding-top: 20px;
+    .getEmail {
+      width: 300px;
+      .small {
+        font-size: 10px;
+      }
+    }
+    .emailInput {
+      input {
+        height: 50px;
+      }
+      button {
+        height: 50px;
+        margin-left: 20px;
+        border: none;
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+  .tiny {
+    padding-top: 40px;
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    font-size: 10px;
+    padding-bottom: 50px;
+  }
+  .stuff {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 70%;
+    p {
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+    h6  {
+      padding-bottom: 10px;
+      border-bottom: 1px solid lightgray;
+    }
+    p:hover {
+      @include hover;
+    }
+  }
+  .followUS {
+    .imgs{
+      display: flex;
+      img {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+      }
+    }
+  }
+  .apps {
+    img {
+      height: 30px;
+    }
+    img:hover {
+      border: 2px solid black;
+      border-radius: 15px;
+    }
+  }
+  .signUpEmail {
+    margin-top: 40px;
+  }
+}
