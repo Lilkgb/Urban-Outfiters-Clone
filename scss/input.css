@@ -90,7 +90,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 60px;
+    flex-wrap: wrap;
     margin-bottom: 20px; }
     .main .information p {
       display: flex;
@@ -291,5 +291,44 @@
     border-radius: 15px; }
   .bottom .signUpEmail {
     margin-top: 40px; }
+
+@media (max-device-width: 750px) {
+  .main .information .shipping {
+    width: 100%;
+    margin-bottom: 10px; }
+  .main .information .giftCards {
+    width: 100%;
+    margin-bottom: 10px; }
+  .main .information .rewards {
+    width: 100%;
+    margin-bottom: 10px; }
+  .main .limited .discount h1 {
+    font-size: 60px; }
+  .main .mainBox .filler {
+    width: 100%; }
+  .main .deals .dealBox {
+    width: 33%; }
+
+  .bottom .stuff {
+    width: 100%; } }
+@media (max-width: 950px) {
+  .main .information .shipping {
+    width: 100%;
+    margin-bottom: 10px; }
+  .main .information .giftCards {
+    width: 100%;
+    margin-bottom: 10px; }
+  .main .information .rewards {
+    width: 100%;
+    margin-bottom: 10px; }
+  .main .limited .discount h1 {
+    font-size: 60px; }
+  .main .mainBox .filler {
+    width: 100%; }
+  .main .deals .dealBox {
+    width: 33%; }
+
+  .bottom .stuff {
+    width: 100%; } }
 
 /*# sourceMappingURL=input.css.map */

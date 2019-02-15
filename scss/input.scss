@@ -126,7 +126,7 @@ $pink: #ff006e;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 60px;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     p {
       display: flex;
@@ -377,5 +377,87 @@ $pink: #ff006e;
   }
   .signUpEmail {
     margin-top: 40px;
+  }
+}
+
+@media (max-device-width: 750px) {
+  .main {
+    .information {
+      .shipping {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .giftCards {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .rewards {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    .limited {
+      .discount {
+        h1 {
+          font-size: 60px;
+        }
+      }
+    }
+    .mainBox {
+      .filler {
+        width: 100%;
+      }
+    }
+    .deals {
+      .dealBox {
+        width: 33%;
+      }
+    }
+  }
+  .bottom {
+    .stuff {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .main {
+    .information {
+      .shipping {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .giftCards {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .rewards {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    .limited {
+      .discount {
+        h1 {
+          font-size: 60px;
+        }
+      }
+    }
+    .mainBox {
+      .filler {
+        width: 100%;
+      }
+    }
+    .deals {
+      .dealBox {
+        width: 33%;
+      }
+    }
+  }
+  .bottom {
+    .stuff {
+      width: 100%;
+    }
   }
 }
