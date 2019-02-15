@@ -15,6 +15,7 @@
 }
 $gray: #f3f2f2;
 $pink: #ff006e;
+$width: 100%;
 
 
 .banner {
@@ -384,15 +385,15 @@ $pink: #ff006e;
   .main {
     .information {
       .shipping {
-        width: 100%;
+        width: $width;
         margin-bottom: 10px;
       }
       .giftCards {
-        width: 100%;
+        width: $width;
         margin-bottom: 10px;
       }
       .rewards {
-        width: 100%;
+        width: $width;
         margin-bottom: 10px;
       }
     }
@@ -405,7 +406,7 @@ $pink: #ff006e;
     }
     .mainBox {
       .filler {
-        width: 100%;
+        width: $width;
       }
     }
     .deals {
@@ -416,7 +417,7 @@ $pink: #ff006e;
   }
   .bottom {
     .stuff {
-      width: 100%;
+      width: $width;
     }
   }
 }
@@ -425,15 +426,15 @@ $pink: #ff006e;
   .main {
     .information {
       .shipping {
-        width: 100%;
+        width: $width;
         margin-bottom: 10px;
       }
       .giftCards {
-        width: 100%;
+        width: $width;
         margin-bottom: 10px;
       }
       .rewards {
-        width: 100%;
+        width: $width;
         margin-bottom: 10px;
       }
     }
@@ -446,7 +447,7 @@ $pink: #ff006e;
     }
     .mainBox {
       .filler {
-        width: 100%;
+        width: $width;
       }
     }
     .deals {
@@ -457,7 +458,15 @@ $pink: #ff006e;
   }
   .bottom {
     .stuff {
-      width: 100%;
+      width: $width;
+    }
+  }
+}
+
+@media(min-device-width: 750px) and (max-device-width: 1024px) {
+  .bottom {
+    .stuff {
+      width: $width;
     }
   }
 }

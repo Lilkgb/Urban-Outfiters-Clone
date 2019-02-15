@@ -330,5 +330,8 @@
 
   .bottom .stuff {
     width: 100%; } }
+@media (min-device-width: 750px) and (max-device-width: 1024px) {
+  .bottom .stuff {
+    width: 100%; } }
 
 /*# sourceMappingURL=input.css.map */
