@@ -374,7 +374,10 @@
   margin-top: 40px;
 }
 
-@media only screen and (max-device-width: 812px) {
+@media only screen and (max-device-width: 812px) and (min-device-width: 375px) and (-webkit-device-pixel-ratio: 3) {
+  .main {
+    width: 85%;
+  }
   .main .information .shipping {
     width: 100%;
     margin-bottom: 10px;
@@ -390,8 +393,25 @@
   .main .limited .discount h1 {
     font-size: 60px;
   }
+  .main .mainBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   .main .mainBox .filler {
     width: 100%;
+    margin-bottom: 20px;
+  }
+  .main .mainBox .filler img {
+    width: 100%;
+  }
+  .main .mainBox .filler img:hover {
+    cursor: pointer;
+    border: 10px solid hotpink;
+  }
+  .main .mainBox .filler button {
+    background-color: rgba(255, 255, 255, 0.5);
   }
   .main .deals .dealBox {
     width: 33%;
