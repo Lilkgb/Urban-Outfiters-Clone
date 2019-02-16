@@ -376,7 +376,12 @@
 
 @media only screen and (max-device-width: 812px) and (min-device-width: 375px) and (-webkit-device-pixel-ratio: 3) {
   .main {
-    width: 85%;
+    width: 100%;
+  }
+  .main .information {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
   }
   .main .information .shipping {
     width: 100%;
@@ -390,11 +395,17 @@
     width: 100%;
     margin-bottom: 10px;
   }
+  .main .limited {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
   .main .limited .discount h1 {
     font-size: 60px;
   }
   .main .mainBox {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
   .main .mainBox .filler {
     width: 100%;

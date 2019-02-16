@@ -390,8 +390,11 @@ $width: 100%;
 
 @media only screen and (max-device-width: 812px) and (min-device-width: 375px) and (-webkit-device-pixel-ratio: 3) {
   .main {
-    width: 85%;
+    width: 100%;
     .information {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 20px;
       .shipping {
         width: $width;
         margin-bottom: 10px;
@@ -406,6 +409,9 @@ $width: 100%;
       }
     }
     .limited {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 20px;
       .discount {
         h1 {
           font-size: 60px;
@@ -413,7 +419,8 @@ $width: 100%;
       }
     }
     .mainBox {
-      width: 100%;
+      width: 90%;
+      margin: auto;
       .filler {
         width: 100%;
         margin-bottom: 20px;
