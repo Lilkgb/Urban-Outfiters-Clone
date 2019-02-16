@@ -374,4 +374,82 @@
   margin-top: 40px;
 }
 
+@media only screen and (max-device-width: 812px) and (min-device-width: 375px) and (-webkit-device-pixel-ratio: 3) {
+  .main {
+    width: 85%;
+  }
+  .main .information .shipping {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main .information .giftCards {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main .information .rewards {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main .limited .discount h1 {
+    font-size: 60px;
+  }
+  .main .mainBox {
+    width: 100%;
+  }
+  .main .mainBox .filler {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: green;
+  }
+  .main .mainBox .filler img {
+    width: 100%;
+  }
+  .main .mainBox .filler img:hover {
+    cursor: pointer;
+    border: 10px solid hotpink;
+  }
+  .main .mainBox .filler button {
+    display: none;
+  }
+  .main .deals .dealBox {
+    width: 33%;
+  }
+
+  .bottom .stuff {
+    width: 100%;
+  }
+}
+@media (max-width: 950px) {
+  .main .information .shipping {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main .information .giftCards {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main .information .rewards {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main .limited .discount h1 {
+    font-size: 60px;
+  }
+  .main .mainBox .filler {
+    width: 100%;
+  }
+  .main .deals .dealBox {
+    width: 33%;
+  }
+
+  .bottom .stuff {
+    width: 100%;
+  }
+}
+@media (min-device-width: 750px) and (max-device-width: 1024px) {
+  .bottom .stuff {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=input.css.map */
