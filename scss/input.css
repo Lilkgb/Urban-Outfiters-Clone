@@ -394,14 +394,12 @@
     font-size: 60px;
   }
   .main .mainBox {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
   .main .mainBox .filler {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 200px;
+    background-color: green;
   }
   .main .mainBox .filler img {
     width: 100%;

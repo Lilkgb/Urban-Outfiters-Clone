@@ -413,13 +413,11 @@ $width: 100%;
       }
     }
     .mainBox {
-      display: flex;
       width: 100%;
-      justify-content: space-between;
-      flex-wrap: wrap;
       .filler {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 200px;
+        background-color: green;
         img {
           width: 100%;
         }
