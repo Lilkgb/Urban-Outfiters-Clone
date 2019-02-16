@@ -388,7 +388,7 @@ $width: 100%;
   }
 }
 
-@media (max-device-width: 750px) {
+@media only screen and (max-device-width: 812px) {
   .main {
     .information {
       .shipping {
