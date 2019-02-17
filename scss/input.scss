@@ -450,51 +450,51 @@ $width: 100%;
   }
 }
 
-@media (max-width: 950px) {
-  .main {
-    .information {
-      .shipping {
-        width: $width;
-        margin-bottom: 10px;
-      }
-      .giftCards {
-        width: $width;
-        margin-bottom: 10px;
-      }
-      .rewards {
-        width: $width;
-        margin-bottom: 10px;
-      }
-    }
-    .limited {
-      .discount {
-        h1 {
-          font-size: 60px;
-        }
-      }
-    }
-    .mainBox {
-      .filler {
-        width: $width;
-      }
-    }
-    .deals {
-      .dealBox {
-        width: 33%;
-      }
-    }
-  }
-  .bottom {
-    .stuff {
-      width: $width;
-    }
-  }
-}
-
-@media(min-device-width: 750px) and (max-device-width: 1024px) {
-  .bottom {
-    .stuff {
-      width: $width;
-    }
-  }
-}
+// @media (max-width: 950px) {
+//   .main {
+//     .information {
+//       .shipping {
+//         width: $width;
+//         margin-bottom: 10px;
+//       }
+//       .giftCards {
+//         width: $width;
+//         margin-bottom: 10px;
+//       }
+//       .rewards {
+//         width: $width;
+//         margin-bottom: 10px;
+//       }
+//     }
+//     .limited {
+//       .discount {
+//         h1 {
+//           font-size: 60px;
+//         }
+//       }
+//     }
+//     .mainBox {
+//       .filler {
+//         width: $width;
+//       }
+//     }
+//     .deals {
+//       .dealBox {
+//         width: 33%;
+//       }
+//     }
+//   }
+//   .bottom {
+//     .stuff {
+//       width: $width;
+//     }
+//   }
+// }
+//
+// @media(min-device-width: 750px) and (max-device-width: 1024px) {
+//   .bottom {
+//     .stuff {
+//       width: $width;
+//     }
+//   }
+// }
